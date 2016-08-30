@@ -1,0 +1,126 @@
+/* ID Selector */
+#farmScene{
+	display: block;
+	margin-left: auto;
+	margin-right: auto 
+}
+#pretty{
+	float: left;
+	width: 250px;
+	height: 300px;
+	padding-right: 15px
+}
+#cirleImage{
+  float: right;
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+
+
+}	
+#in_pot {
+	float: right;
+	margin-right: 425px;
+	width: 200px;
+	height: 200px;
+	
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#in_pot:hover {
+ border-radius: 50%;
+ -webkit-transform: rotate(360deg);
+ -moz-transform: rotate(360deg);
+ -o-transform: rotate(360deg);
+ -ms-transform: rotate(360deg);
+ transform: rotate(360deg);
+
+}
+
+#hideShowButton{
+
+  background-color: #4151be;
+  color: black;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50%;
+  position: relative;
+  right: -80%; 
+}
+#ingredientsLeft{
+  background-color: #eceef8;
+  color: black;
+  border: solid;
+  padding: 15px 32px;
+ }
+
+/* class Selector*/
+.recipe{
+  margin: 20px 60px 20px 60px;
+}	
+
+
+.isSelectable .ui-selecting {
+  background: #ccc;
+}
+
+.isSelectable .ui-selected {
+  background: #ffffcc;
+}
+
+/*font awesome */
+input[type="checkbox"] {
+  display:none;
+}
+
+
+input[type="checkbox"] + span:before {
+  font-family: 'FontAwesome';
+  padding-right: 3px;
+  font-size: 20px;
+}
+
+
+input[type="checkbox"] + span:before {
+  content: "\f096"; /* check-empty */
+}
+
+input[type="checkbox"]:checked + span:before {
+  content: "\f046"; /* check */
+}
+
+/*element Selector*/
+h1{
+	font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 58px;
+  color: #4151be;
+  display: block;
+  text-align: center;
+}
+
+section{
+	display: block;
+}
+
+body{
+	font: 15px Verdana, Geneva, sans-serif; 
+ margin: 20px 50px 20px 50px;
+}
+
+table, th, td {
+  border: none;
+  border-collapse: collapse;
+}
+th, td {
+  padding: none;
+  text-align: left;    
+}

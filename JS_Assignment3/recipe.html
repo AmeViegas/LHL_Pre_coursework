@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--css page-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--google fonts library-->
+	<link href='https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps' rel='stylesheet' type='text/css' >
+
+	<!--jQuery library-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<!-- font awesome -->
+	<script src="https://use.fontawesome.com/80d1482cd5.js"></script>
+
+	<!--javascript/jQuery page : make sure this is last otherwise the scripts don't work. *sigh* -->
+	<script src="script.js" > </script>
+
+	<title>Recipes from the farm: hot pot</title>
+</head>
+
+<body>
+
+	<img src="farmScene_redBarn.png" id="farmScene" />
+	
+	<h1>Recipes from the Farm</h1>
+	
+	<section id="intro">
+
+		<table style="width:100%">
+			<tr>
+				<td rowspan="4">
+					<img src="hotpot_pretty.jpg" id="pretty">
+				</td>
+				<td>
+					<p> <strong>Hotpot! </strong>  Yummy, yummy, hotpot. This is my favorite go-to dish for those busy days. I love that you can toss it in a crock pot in the morning and when you come home you can finish off and have a yummy meal. While it is time consuming, it is not work. The time is all passive, mostly just cooking the pork as a slow braise. And, I see a lot of crock pot meals coming up in my life soon!</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>I first found this recipe in <a href="https://www.rivercottage.net/"> <em>The River Cottage Cookbook</em> <a> by Hugh Fearnley-Whittingstall. Hugh's is known for his back-to-basics cooking style with local and sustainable products.  As a locavore, this farm-to-table style of cooking is near and dear to my heart.  Food just tastes so much better when you know where it is from and that it is fresh. I know my pork is pasture raised, they had a good life and that good life actually makes them tastier is just a bonus for me. *grin* </p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Originally from Mongolia, Mongol horsemen brought the concept through out Asia and each ethnicity adapted the hotpot to their own version. Hotpot is also known as: Sukiyaki (Japan), Shabu-shabu (Japan and Taiwan), Thai suki (Thailand), etc. Basically a stew with protein and vegetables which is spooned over noodles or rice. You can make it your own by swapping out the pork for beef or chicken or tofu (but then you don't need to braise it). This might be hard to make vegan or vegetarian but I'm sure that Google will help you with a vegetarian hotpot as I'm not sure how many additional spices you would need to create the Umami that the pork belly provides.</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="hideShowButton"> Hide/Show all photos </div>
+				</td>
+			</tr>
+		</table>
+
+	</section>
+	
+	<h2> The Recipe: Pork Belly hotpot </h2>
+	<img src="hotpot_inpot.jpg" id="in_pot">
+	<section class="recipe">
+		<form>
+			<h3>Ingredients</h3>
+
+			<h4>Braising</h4>
+
+			<label for="pork">
+				<input type="checkbox" name="ingredients" id="pork" value="pork"/>
+				<span>  1.5 kg pork belly with rind on</span>
+			</label><br />	
+			<label for="stock">
+				<input type="checkbox" name="ingredients" id="stock" value="stock"/>
+				<span>  1.5 litre water or stock (pork or chicken)</span>
+			</label><br />	
+			<label for="onions">	
+				<input type="checkbox" name="ingredients" id="onions" value="onions"/>
+				<span> 5 spring onions, rough cut</span>
+			</label><br />	
+			<label for="soySauce">
+				<input type="checkbox" name="ingredients" id="soySauce" value="soySauce"/>
+				<span> 100 ml soy sauce or tamari</span>
+			</label><br />	
+			<label for="wine">
+				<input type="checkbox" name="ingredients" id="wine" value="wine"/>
+				<span> 75 ml Chinese rice wine</span>
+			</label><br />	
+			<label for="sugar">
+				<input type="checkbox" name="ingredients" id="sugar" value="sugar"/>
+				<span> 2 tablespoons brown sugar</span>
+			</label><br />	
+			<label for="anise">
+				<input type="checkbox" name="ingredients" id="anise" value="anise"/>
+				<span>  3 star anise</span>
+			</label><br />	
+			<label for="ginger">
+				<input type="checkbox" name="ingredients" id="ginger" value="ginger"/>
+				<span> 10 cm piece of fresh ginger root, peeled and sliced into rounds</span>
+			</label><br />	
+			<label for="chilli">
+				<input type="checkbox" name="ingredients" id="chilli" value="chilli"/>
+				<span> pinch of dried chilli flakes</span>
+			</label><br />	
+
+
+			<h4>Finishing</h4>
+			<label for="spOnion">
+				<input type="checkbox" name="ingredients" id="spOnion" value="spOnion"/>
+				<span> 7 spring onions, sliced</span>
+			</label><br />	
+			<label for="starch">
+				<input type="checkbox" name="ingredients" id="starch" value="starch"/>
+				<span> cooked rice or noodles</span>
+			</label><br />	
+		</form>	 
+		
+		
+		<br /> <br />
+
+		<div id="ingredientsLeft"></div>
+
+		<h4>Optional Ingredients</h4> 
+		<img src="bok_choy.jpg" id="cirleImage">
+		<p>
+			1 bunch bok choy, sliced <br />
+			2 carrots, thinly sliced <br />
+			8 oz cabbage, thinly sliced <br />
+		</p>
+	</section>
+
+	<section class="recipe">
+		<h3>Directions</h3>
+		<ol class="isSelectable">
+			<li>Bring pot of water to boil. The water should be enough to cover the pork.</li>
+			<li>Remove bones from the pork belly and cut into rectangular chunks, about 2.5 x 5 cm</li>
+			<li>Add pork belly to hot water pot and bring back to boil. Simmer for 5 minutes, skimming off the scum that rises to the surface. Then drain through a colander.</li>
+			<li>In a pot, bring the 1.5 litre of water/stock to boil.</li>
+			<li>Add all the braising ingredients and pork.</li>
+			<li>Reduce heat, cover tightly and simmer very slowly for about 2 hours, turning the meat occasionally. Until the pork is very tender. </li>
+			<li>Remove the pork with a slotted spoon and set aside. Strain the braising liquid.</li>
+			<li>Reduce the braising liquid. it should be lightly syrupy.</li>
+			<li>If using optional ingredients, stir fry quickly and add to reduced braising liquid.</li>
+			<li>Add spring onions to  reduced braising liquid </li>
+			<li>In individual bowls, place rice or noodles as the base then top with hotpot. Serve.</li>
+		</ol>
+	</section>
+	<section>
+		<h4>Notes:</h4>	
+		<p>Tamari is a wheat-free alternative for soy sauce.</p>
+		<p>Optional vegetables, can be almost anything. Just make sure to only select one or two options and slice thinly so as not to over power the dish. You really want the pork to be the main event.</p>
+		<p>Crockpot directions: follow above directions on stove until step 5. Once stock has come to boil, put all the ingredients into the crock pot and place on low.  Make sure to cut the pork so that the braising time in the crock pot does not disintegrate the pork.  So, the longer you plan for it to be in the crockpot, the larger the size of the pork pieces.</p>
+	</section>
+</body>
+</html>
